@@ -1,0 +1,390 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header,
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* ------------ header area ------------------------ */
+.hearder-container {
+    background-color: #012030;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    padding: 100px;
+    margin-top: 30px;
+    margin-bottom: 130px;
+
+}
+
+.header-text {
+    width: 50%;
+    color: white;
+
+}
+
+.header-text h1 {
+    font-size: 4.5em;
+    font-weight: 700;
+
+}
+
+.header-text p {
+    font-size: 1em;
+    font-weight: 100;
+
+}
+
+.header-image {
+    width: 50%;
+    margin-left: 120px;
+}
+
+.header-image img {
+    width: 100%;
+}
+
+.header-btn {
+    background-color: #056CF2;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+
+.header-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.header-btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.header-btn:hover span {
+    padding-right: 25px;
+}
+
+.header-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* -------------------------navigation and blog main container -----------------------------------*/
+.nav-and-blogs-container {
+    display: flex;
+    gap: 24px;
+}
+
+/* -------------------------navigation area-----------------------------------*/
+.navbar {
+
+    background-color: #012030;
+    height: 312px;
+    width: 315px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.nav-btn {
+
+
+    border: 0px;
+
+    background-color: #D9D9D9;
+    width: 250px;
+    height: 64px;
+    border-radius: 5px;
+
+
+}
+
+.nav-btn:hover {
+    background-color: #056CF2;
+    color: white;
+}
+
+
+.nav-btn a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    font-weight: 400;
+
+}
+
+/* --------------blogs area start -----------------*/
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.blogs-info {
+    border: 1px solid gray;
+    border-radius: 10px;
+
+}
+
+.blog-data {
+
+    padding: 20px;
+
+}
+
+.blog-btn {
+    padding: 4px 16px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 1.1em;
+    color: #161616;
+    margin-bottom: 10px;
+}
+
+.blog-durition-massage {
+    color: #161616;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 10px;
+}
+
+.blog-durition-massage p>i {
+    margin-top: 20px;
+    color: rgba(22, 22, 22, 0.7);
+}
+
+
+.view-all-button {
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#view-all-btn {
+    background-color: #056CF2;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin: o auto;
+}
+
+/* --------------footer area start -----------------*/
+.footer-container {
+    background-color: #012030;
+    margin-top: 50px;
+
+}
+
+.footer-title {
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    padding: 50px 0px 20px 0px;
+}
+
+hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-data {
+    margin-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+
+}
+
+.footer-data a {
+    text-decoration: none;
+    color: #B9B9B9;
+
+    padding-left: 1em;
+}
+
+/* --------------footer social media icon  -----------------*/
+.social-media-icon {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.social-media-icon a {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    padding: 20px;
+
+
+}
+
+/* --------------media quary mobile device  -----------------*/
+
+@media only screen and (max-width: 576px) {
+
+    .hearder-container {
+
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .header-image {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .header-text {
+        width: 100%;
+        margin-right: 50px;
+
+    }
+
+    .header-text h1 {
+        font-size: 2em;
+        font-weight: 400;
+    }
+
+    .header-sub-text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .nav-and-blogs-container {
+        flex-direction: column;
+    }
+
+    .navbar {
+
+        background-color: transparent;
+
+    }
+
+    /* --------------blogs area  -----------------*/
+    .blogs {
+
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        row-gap: 15px;
+    }
+
+    .blogs-info img {
+        width: 100%;
+    }
+
+    .footer-data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+}
+
+/* --------------media quary tablet device  -----------------*/
+@media only screen and (max-width: 922px) and (min-width: 577Px) {
+    .hearder-container {
+
+
+        margin-bottom: 30px;
+    }
+
+    .header-text h1 {
+        font-size: 2em;
+        font-weight: 400;
+    }
+
+    .header-sub-text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .header-btn {
+
+        margin-top: 5px;
+    }
+
+    .nav-and-blogs-container {
+        flex-direction: column;
+    }
+
+    .navbar {
+
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 80px;
+
+        background-color: transparent;
+
+    }
+
+    .nav-btn {
+        width: 100%;
+    }
+
+    #upcoming-match-btn {
+        width: 30%;
+
+    }
+
+    #all-group-btn {
+        width: 30%;
+    }
+
+    #blogs-btn {
+        width: 30%;
+    }
+
+    .blogs {
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 15px;
+    }
+
+    .blogs-info img {
+        width: 100%;
+    }
+
+    .view-all-button {
+        visibility: visible;
+
+    }
+}
